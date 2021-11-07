@@ -8,6 +8,12 @@
 html {
   /* 62.5*16=10px */
   font-size: 62.5%; }
+  @media (max-width: 576px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 992px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -15,7 +21,8 @@ body {
   font-size: 1.6rem;
   color: #777;
   padding: 1rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 .header {
   height: 95vh;
@@ -50,7 +57,7 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease-out;
   padding-bottom: 2rem; }
 
