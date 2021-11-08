@@ -11,9 +11,6 @@ html {
   @media (max-width: 576px) {
     html {
       font-size: 30%; } }
-  @media (max-width: 992px) {
-    html {
-      font-size: 50%; } }
 
 body {
   font-family: 'Lato', sans-serif;
