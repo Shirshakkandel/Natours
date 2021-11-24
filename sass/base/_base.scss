@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 62.5*16=10px */
+  font-size: 62.5%;
+  @media (max-width: 576px) {
+    font-size: 30%;
+  }
+
+  @media only screen and (max-width: 786px) and (min-width: 577px) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-gray-dark;
+  padding: 1rem;
+  box-sizing: border-box;
+  // overflow: hidden;
+}

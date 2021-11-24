@@ -1,0 +1,42 @@
+.card {
+  height: 50rem;
+  transition: all 0.5s;
+  //persective have to be in parents components
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //if width not given then it will take contain width which is front and back
+    backface-visibility: hidden;
+
+    &--front {
+      background-color: white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg); //left to right
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0); //left to right
+  }
+}
